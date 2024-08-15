@@ -1,0 +1,35 @@
+comandos git
+
+- clonar respositório remoto na máquina local
+	git clone https://github.com/gustavofelicetti21/EstruturaDeDadosI24.git
+
+- ver status do repositório local
+	git status
+
+- adicioar arquivos não rastrados a serem confirmados
+	git add .
+
+- criar ponto de marcação(commit) do projeto/branch
+	git commit -m "Meu primero commit" 
+
+- verificar repositórios remotos configurados no repo local
+	git remote -v
+
+- enviar commit pendentes para o repo remoto
+	git push origin main
+
+
+---
+comandos .net
+
+- listar versões instaladas
+	dotnet --list-sdks
+
+- criar novo projeto console
+	dotnet new console -n "Aula 01"
+
+- executar programa
+	dotnet rum
+
+- executar programa com detalhes
+	dotnet watch run
