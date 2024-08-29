@@ -29,7 +29,10 @@ comandos .net
 	dotnet new console -n "Aula 01"
 
 - executar programa
-	dotnet rum
+	dotnet run
 
 - executar programa com detalhes
 	dotnet watch run
+
+- abrir a pasta no code
+	code .
