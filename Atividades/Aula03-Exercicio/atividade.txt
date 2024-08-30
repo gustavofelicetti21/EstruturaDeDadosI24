@@ -1,0 +1,2 @@
+Escreva um algoritmo que armazene em dois vetores separados os primeiros 100 números pares e ímpares.
+No final, imprima a sequência armazenada em cada um deles.
