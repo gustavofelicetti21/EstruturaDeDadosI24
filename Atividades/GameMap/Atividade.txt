@@ -1,0 +1,5 @@
+Implemente o exemplo do GameMap contido nas páginas 40 a 42 do livro.
+
+Publique em seu Github e responsa aqui com o link do projeto em seu repositório.
+
+Atividade prática individual.
