@@ -1,0 +1,1 @@
+Utilizando o conceito de pilha (Stack<>) com os métodos Pop() e Push(), escreva um programa que leia uma entrada do usuário e identifique se a palavra informada é ou não um PALINDROMO
