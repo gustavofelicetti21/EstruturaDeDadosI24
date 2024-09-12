@@ -1,0 +1,1 @@
+A principal diferença entre o ArrayList e o List é que o primeiro não é fortemente tipado
