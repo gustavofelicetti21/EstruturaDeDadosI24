@@ -1,5 +1,5 @@
-That repository, is for the matter of Data Structure, in the college.
-I'm studying computer science college, and the matter is part of the second phase grid.
-We're learning Data Structure using C# language.
+That repository is for the Data Structures course in college.
+I'm studying Computer Science, and this course is part of the second semester curriculum.
+We're learning Data Structures using the C# language.
 
-The commits of this repository, are about the apprenticeship in a class or a exercise did on the class.
+The commits in this repository are related to lessons learned in class or exercises completed during class.
