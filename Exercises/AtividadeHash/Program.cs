@@ -1,8 +1,10 @@
-﻿using AtividadeHash;
+﻿using System.Xml;
+using AtividadeHash;
 
 Product produto = new Product();
 
 Dictionary<Product, string> dicProduct = new Dictionary<Product, string>();
+
 dicProduct.Add(
     new Product()
     {
@@ -15,89 +17,89 @@ dicProduct.Add(
 dicProduct.Add(
     new Product()
     {
-        Code = "ABC123",
-        Name = "Condicionador",
+        Code = "BCD123",
+        Name = "Shampoo",
         Value = 25.99
-    }, "A2"
+    }, "A1"
 );
 
 dicProduct.Add(
     new Product()
     {
-        Code = "ABC123",
-        Name = "Condicionador",
-        Value = 25.99
-    }, "A3"
+        Code = "CDE123",
+        Name = "Sabonete",
+        Value = 3.99
+    }, "A1"
 );
 
 dicProduct.Add(
     new Product()
     {
-        Code = "ABC123",
-        Name = "Condicionador",
-        Value = 25.99
-    }, "A4"
+        Code = "DEF123",
+        Name = "Escova de Dente",
+        Value = 15.99
+    }, "A1"
 );
 
 dicProduct.Add(
     new Product()
     {
-        Code = "ABC123",
-        Name = "Condicionador",
-        Value = 25.99
-    }, "A5"
+        Code = "EFG123",
+        Name = "Creme Dental",
+        Value = 11.99
+    }, "A1"
 );
 
 dicProduct.Add(
     new Product()
     {
-        Code = "ABC123",
-        Name = "Condicionador",
-        Value = 25.99
-    }, "A6"
+        Code = "JKL456",
+        Name = "Detergente",
+        Value = 5.99
+    }, "B8"
 );
 
 dicProduct.Add(
     new Product()
     {
-        Code = "ABC123",
-        Name = "Condicionador",
-        Value = 25.99
-    }, "A7"
+        Code = "KLM456",
+        Name = "Sabão em Pó",
+        Value = 23.99
+    }, "B8"
 );
 
 dicProduct.Add(
     new Product()
     {
-        Code = "ABC123",
-        Name = "Condicionador",
-        Value = 25.99
-    }, "A8"
+        Code = "LMN456",
+        Name = "Amaciante",
+        Value = 30.99
+    }, "B8"
 );
 
 dicProduct.Add(
     new Product()
     {
-        Code = "ABC123",
-        Name = "Condicionador",
-        Value = 25.99
-    }, "A9"
+        Code = "MNO456",
+        Name = "Sabonete Líquido",
+        Value = 10.99
+    }, "B8"
 );
 
 dicProduct.Add(
     new Product()
     {
-        Code = "ABC123",
-        Name = "Condicionador",
-        Value = 25.99
-    }, "C1"
+        Code = "NOP456",
+        Name = "Esponja",
+        Value = 15.99
+    }, "B8"
 );
 
 dicProduct.Add(
     new Product()
     {
-        Code = "ABC123",
-        Name = "Condicionador",
+        Code = "STU789",
+        Name = "Arroz",
         Value = 25.99
     }, "C2"
 );
@@ -105,143 +107,131 @@ dicProduct.Add(
 dicProduct.Add(
     new Product()
     {
-        Code = "ABC123",
-        Name = "Condicionador",
-        Value = 25.99
-    }, "C3"
+        Code = "TUV789",
+        Name = "Feijão",
+        Value = 20.99
+    }, "C2"
 );
 
 dicProduct.Add(
     new Product()
     {
-        Code = "ABC123",
-        Name = "Condicionador",
-        Value = 25.99
+        Code = "UVW789",
+        Name = "Frango",
+        Value = 99.99
+    }, "C2"
+);
+
+dicProduct.Add(
+    new Product()
+    {
+        Code = "VWX789",
+        Name = "Porco",
+        Value = 150.99
+    }, "C2"
+);
+
+dicProduct.Add(
+    new Product()
+    {
+        Code = "WXY789",
+        Name = "Gado",
+        Value = 200.99
+    }, "C2"
+);
+
+dicProduct.Add(
+    new Product()
+    {
+        Code = "XYZ789",
+        Name = "Macarrão",
+        Value = 10.99
     }, "C4"
 );
 
 dicProduct.Add(
     new Product()
     {
-        Code = "ABC123",
-        Name = "Condicionador",
-        Value = 25.99
-    }, "C5"
+        Code = "XZA789",
+        Name = "Ovo",
+        Value = 7.99
+    }, "C4"
 );
 
 dicProduct.Add(
     new Product()
     {
-        Code = "ABC123",
-        Name = "Condicionador",
-        Value = 25.99
-    }, "C6"
+        Code = "ZAB789",
+        Name = "Brócolis",
+        Value = 8.99
+    }, "C4"
 );
 
 dicProduct.Add(
     new Product()
     {
-        Code = "ABC123",
-        Name = "Condicionador",
-        Value = 25.99
-    }, "C7"
+        Code = "GHI789",
+        Name = "Batata",
+        Value = 22.99
+    }, "C4"
 );
 
 dicProduct.Add(
     new Product()
     {
-        Code = "ABC123",
-        Name = "Condicionador",
-        Value = 25.99
-    }, "C8"
+        Code = "HIJ789",
+        Name = "Maçã",
+        Value = 22.99
+    }, "C4"
 );
 
-dicProduct.Add(
-    new Product()
-    {
-        Code = "ABC123",
-        Name = "Condicionador",
-        Value = 25.99
-    }, "C9"
-);
 
-dicProduct.Add(
-    new Product()
+do
+{
+    foreach (KeyValuePair<Product, string> kvp in dicProduct)
     {
-        Code = "ABC123",
-        Name = "Condicionador",
-        Value = 25.99
-    }, "B1"
-);
 
-dicProduct.Add(
-    new Product()
-    {
-        Code = "ABC123",
-        Name = "Condicionador",
-        Value = 25.99
-    }, "B2"
-);
+        Console.Write($@"
+    Products:
+    Code: {kvp.Key.Code}
+    Name: {kvp.Key.Name}
+    Value: {kvp.Key.Value}
+    ");
+    }
 
-dicProduct.Add(
-    new Product()
-    {
-        Code = "ABC123",
-        Name = "Condicionador",
-        Value = 25.99
-    }, "B3"
-);
+    Console.WriteLine("Digite o código do produto que deseja saber a prateleira(sair para parar): ");
+    string code = Console.ReadLine()!;
 
-dicProduct.Add(
-    new Product()
-    {
-        Code = "ABC123",
-        Name = "Condicionador",
-        Value = 25.99
-    }, "B4"
-);
+    string cd = code.ToUpper();
 
-dicProduct.Add(
-    new Product()
+    if (cd == "sair")
     {
-        Code = "ABC123",
-        Name = "Condicionador",
-        Value = 25.99
-    }, "B5"
-);
+        break;
+    }
 
-dicProduct.Add(
-    new Product()
+    bool flag = true;
+    foreach (KeyValuePair<Product, string> kvp in dicProduct)
     {
-        Code = "ABC123",
-        Name = "Condicionador",
-        Value = 25.99
-    }, "B6"
-);
+        if (kvp.Key.Code == cd) {
+            Console.WriteLine($"Seu produto está na prateleira: {kvp.Value}");
+            flag = false;
+        }
+    };
 
-dicProduct.Add(
-    new Product()
-    {
-        Code = "ABC123",
-        Name = "Condicionador",
-        Value = 25.99
-    }, "B7"
-);
+    if (flag==true) {
+        Console.WriteLine("Seu código é inválido!");
+    }
+    Thread.Sleep(3000);
 
-dicProduct.Add(
-    new Product()
-    {
-        Code = "ABC123",
-        Name = "Condicionador",
-        Value = 25.99
-    }, "B8"
-);
+    Console.WriteLine("Digite 1 para continuar");
+    string? saida = Console.ReadLine();
 
-dicProduct.Add(
-    new Product()
+    if (saida == "1")
     {
-        Code = "ABC123",
-        Name = "Condicionador",
-        Value = 25.99
-    }, "B9"
-);
+
+    }
+    else 
+    {
+        break;
+    }
+} while (true);
