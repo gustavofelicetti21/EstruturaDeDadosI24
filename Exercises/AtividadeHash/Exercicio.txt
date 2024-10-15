@@ -1,5 +1,5 @@
 Escreva um programa para auxiliar empregadores de uma loja a encontrar a localização em que um produto deveria ser encontrado
-Imagina que cada empregador tem um telefone com a sua aplicação, que deve ser usada para escanear o código do produto e lhes dizer em que prateleira ele deve estar nomeadas de A1  a C9
+Imagina que cada empregador tem um telefone com a sua aplicação, que deve ser usada para escanear o código do produto e lhes dizer em que prateleira ele deve estar nomeadas de A1 a C9
 Para resolver este problema devemos armazenar os dados em uma tabela hash utilizando a classe do tipo dicionário, a chave deve ser uma string para o código de barras e o valor a localização da prateleira.
 Faça a carga de no mínimo 20 produtos contendo 5 em cada prateleira diferente.
 O seu progama deve perguntar ao usuário o código do produto e responder a localização da prateleira.

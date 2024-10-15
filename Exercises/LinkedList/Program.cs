@@ -36,10 +36,8 @@ while (current != null)
     Console.WriteLine();
     Console.WriteLine($"Quote from Windows Application Development Cookbook by Marcin Jamro,{ Environment.NewLine} published by Packt Publishing in 2016.");
     Console.WriteLine();
-    Console.Write(current.Previous != null
-    ? "< PREVIOUS [P]" : Page.GetSpaces(14));
-    Console.Write(current.Next != null
-    ? "[N] NEXT >".PadLeft(76) : string.Empty);
+    Console.Write(current.Previous != null? "< PREVIOUS [P]" : Page.GetSpaces(14));
+    Console.Write(current.Next != null? "[N] NEXT >".PadLeft(76) : string.Empty);
     Console.WriteLine();
     switch (Console.ReadKey(true).Key)
     {
