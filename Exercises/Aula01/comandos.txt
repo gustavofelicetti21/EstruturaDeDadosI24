@@ -18,6 +18,8 @@ comandos git
 - enviar commit pendentes para o repo remoto
 	git push origin main
 
+- retorna as branches do projeto
+	git reomote -v
 
 ---
 comandos .net
