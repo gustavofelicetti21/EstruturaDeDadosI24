@@ -1,5 +1,6 @@
 ﻿using System.Data.Common;
 using AtividadeArvoreBasica;
+using CompanyTree;
 
 Tree<Person> company = new Tree<Person>();
 company.Root = new Node<Person>()
